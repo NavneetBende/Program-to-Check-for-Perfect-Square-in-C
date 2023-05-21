@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+
+int isPerfectSquare(long double x)
+{
+    if (x >= 0) {
+ 
+        long long sr = sqrt(x);
+        return (sr * sr == x);
+    }
+    
+    return 0;
+}
+ 
+int main()
+{
+    long long x = 84;
+    if (isPerfectSquare(x)==1)
+        printf("True");
+    else
+        printf("False");
+    return 0;
+}
